@@ -1,6 +1,6 @@
 # A Simple Expense Calculator App
 
-*A simple and fun expense calculator app written pure HTML, CSS, and vanilla JavaScript*
+*A simple and fun Expense Calculator App written pure HTML, CSS, and vanilla JavaScript*
 
 Check it out <a href="">here</a>!
 
