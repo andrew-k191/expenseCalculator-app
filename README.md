@@ -2,7 +2,7 @@
 
 *A simple and fun Expense Calculator App written pure HTML, CSS, and vanilla JavaScript*
 
-Check it out <a href="">here</a>!
+Check it out <a href="https://andrew-k191.github.io/expenseCalculator-app/>here</a>!
 
 <img src="images/expenses_screenshot.png" alt="expenses screenshot">
 
