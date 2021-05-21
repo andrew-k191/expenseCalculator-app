@@ -8,59 +8,58 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <img class="moneyImg" src="images/money_icon.png" alt="bag of money">
-        <h1 class="heading">Expense Tracker</h1>
+  <div class="header">
+    <img class="moneyImg" src="images/money_icon.png" alt="bag of money">
+    <h1 class="heading">Expense Tracker</h1>
+  </div>
+  <div class="body">
+    <!-- Expense Tracker Form -->
+    <form class="expenseForm">
+      <p>Enter information below:</p>
+      <div class="expenses">
+        <label for="whereExpenseOccurred">Expense Location:</label>
+        <input type="text" id="whereExpenseOccurred" placeholder="enter location" required>
+      </div>
+      <div class="expenses">
+        <label for="descriptionExpense">Description of Expense:</label>
+        <input type="text" id="descriptionExpense" placeholder="enter description"required> 
+      </div>
+      <div class="expenses">
+        <label for="costExpense">Cost:</label>
+        <input type="number" step="0.01" id="costExpense" placeholder="enter dollar amount"required>
+      </div>
+      <div class="expenses">
+        <label for="dateExpense">Date of Expense:</label>
+        <input type="date" id="dateExpense" required>
+      </div>
+      <button type="submit" class="submitExpense">Submit Expense</button>
+    </form>
+    <!-- Expenses Tracker Table -->
+    <div class="tableDiv">
+      <table>
+        <thead>
+          <tr>
+            <th class="tableTitle"colspan="4">Expense Tracker Table</th>
+          </tr>
+        </thead>
+        <tbody class="tableBodyExpenses">
+          <tr class="tableRowHeaders">
+            <td>Expense Location</td>
+            <td>Description of Expense</td>
+            <td>Cost</td>
+            <td>Date</td>
+          </tr>
+            <!-- New information will be inserted here using JavaScript -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="totalCost">Total</td>
+            <td class="totalCostCalculator" colspan="3"></td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
-    <div class="body">
-        <!-- Expense Tracker Form -->
-        <form class="formExpense">
-            <p>Enter information below:</p>
-            <div class="expenses">
-                <label for="whereExpenseOccurred">Expense Occurrence:</label>
-                <input type="text" id="whereExpenseOccurred" placeholder="enter occurrence" required>
-            </div>
-            <div class="expenses">
-                <label for="descriptionExpense">Description of Expense:</label>
-                <input type="text" id="descriptionExpense" placeholder="enter description"required> 
-            </div>
-            <div class="expenses">
-                <label for="costExpense">Cost:</label>
-                <input type="number" step="0.01" id="costExpense" placeholder="enter dollar amount"required>
-            </div>
-            <div class="expenses">
-                <label for="dateExpense">Date of Expense:</label>
-                <input type="date" id="dateExpense" required>
-            </div>
-            <button class="submitExpense">Submit Expense</button>
-        </form>
-        <!-- Expenses Tracker Table -->
-        <div class="tableDiv">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="tableTitle"colspan="4">Expense Tracker Table</th>
-                    </tr>
-                </thead>
-                <tbody class="tableBodyExpenses">
-                    <tr class="tableRowHeaders">
-                        <td>Expense Occurrence</td>
-                        <td>Description of Expense</td>
-                        <td>Cost</td>
-                        <td>Date</td>
-                    </tr>
-                    <!-- New information will be inserted here using JavaScript -->
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="totalCost">Total</td>
-                        <td class="totalCostCalculator" colspan="3"></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-    </div>
-    
-    <script src="code.js"></script>
+  </div>  
+  <script src="code.js"></script>
 </body>
 </html>
