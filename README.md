@@ -14,5 +14,5 @@ I'm excited to get started on the next project!
 
 ## Author
 
-* **Andrew Knight** - *Aspiring Software Developer* - (Website)|(LinkedIn)
+* **Andrew Knight** - *Software Developer* - (Website)|(LinkedIn)
 
